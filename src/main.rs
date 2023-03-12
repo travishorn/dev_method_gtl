@@ -1,8 +1,6 @@
-// We can be more memory efficient by taking `number_list` as a reference rather than taking
-// ownership over it. In the last version, an entire copy of the vector needed to be made. Since
-// we're not mutating `number_list` at any time, taking it by reference like you see here is
-// preferable.
-fn largest(number_list: &Vec<i32>) -> i32 {
+// We can accept any type of array-like data structure by using a slice. This may be preferable
+// because it is more flexible than the last version that could only take a vector.
+fn largest(number_list: &[i32]) -> i32 {
     let mut largest = number_list[0];
 
     for &number in number_list {
