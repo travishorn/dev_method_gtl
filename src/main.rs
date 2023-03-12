@@ -1,43 +1,30 @@
-// These two functions are very similar. The only difference is the types they operate on.
+// We can reuse the same function for many types using a generic type. Warning: There is more work
+// to be done before this function works, however. Rust will complain that it cannot use the
+// comparison operator `>` here because it doesn't know how to compare the order of every possible
+// type you could give it.
+fn largest<T>(list: &[T]) -> T {
+    let mut largest = list[0];
 
-
-// Like before, we can find the largest i32
-fn largest_i32(number_list: &[i32]) -> i32 {
-    let mut largest = number_list[0];
-
-    for &number in number_list {
-        if number > largest {
-            largest = number;
+    for &item in list {
+        if item > largest {
+            largest = item;
         }
     }
 
     largest
 }
 
-
-// We can also now find the largest char with this new function
-fn largest_char(char_list: &[char]) -> char {
-    let mut largest = char_list[0];
-
-    for &char in char_list {
-        if char > largest {
-            largest = char;
-        }
-    }
-
-    largest
-}
 
 fn main() {
     let number_list = vec![34, 50, 25, 100, 65];
 
-    let result = largest_i32(&number_list);
+    let result = largest(&number_list);
 
     println!("The largest number is {}", result);
 
     let char_list = vec!['a', 'b', 'c', 'd', 'e'];
 
-    let result = largest_char(&char_list);
+    let result = largest(&char_list);
 
     println!("The largest char is {}", result);
 }
