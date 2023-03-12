@@ -1,6 +1,8 @@
-// We can accept any type of array-like data structure by using a slice. This may be preferable
-// because it is more flexible than the last version that could only take a vector.
-fn largest(number_list: &[i32]) -> i32 {
+// These two functions are very similar. The only difference is the types they operate on.
+
+
+// Like before, we can find the largest i32
+fn largest_i32(number_list: &[i32]) -> i32 {
     let mut largest = number_list[0];
 
     for &number in number_list {
@@ -12,16 +14,30 @@ fn largest(number_list: &[i32]) -> i32 {
     largest
 }
 
+
+// We can also now find the largest char with this new function
+fn largest_char(char_list: &[char]) -> char {
+    let mut largest = char_list[0];
+
+    for &char in char_list {
+        if char > largest {
+            largest = char;
+        }
+    }
+
+    largest
+}
+
 fn main() {
     let number_list = vec![34, 50, 25, 100, 65];
 
-    let result = largest(&number_list);
+    let result = largest_i32(&number_list);
 
     println!("The largest number is {}", result);
 
-    let number_list = vec![102, 34, 6000, 89, 54, 2, 43, 8];
+    let char_list = vec!['a', 'b', 'c', 'd', 'e'];
 
-    let result = largest(&number_list);
+    let result = largest_char(&char_list);
 
-    println!("The largest number is {}", result);
+    println!("The largest char is {}", result);
 }
