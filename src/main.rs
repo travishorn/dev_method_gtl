@@ -1,30 +1,15 @@
-// The `Point` struct has properties `x` and `y`. They are private.
-struct Point<T> {
-    x: T,
-    y: T,
-}
-
-// If we want to get `x` for example, we can build a getter
-
-// Since the type of `x` is generic, we have to annotate that generic type here again
-impl<T> Point<T> {
-    // In this method `x`, return a reference to the value inside the property `x`
-    fn x(&self) -> &T {
-        &self.x
-    }
-}
-
-// We can target specific types for various methods
-impl Point<f32> {
-    fn distance_from_origin(&self) -> f32 {
-        (self.x.powi(2) + self.y.powi(2)).sqrt()
-    }
-}
+// mod p00_largest_numbers;
+// mod p01_with_duplication;
+// mod p02_remove_duplication;
+// mod p03_vector_reference;
+// mod p04_array_like;
+// mod p05_datatype_functions;
+// mod p06_generic_type;
+// mod p07_restrict_generic;
+// mod p08_custom_type_generic;
+// mod p09_multiple_generics;
+mod p10_methods;
 
 fn main() {
-    let integer_point = Point { x: 5, y: 10 };
-    println!("Integer point x = {}", integer_point.x());
-
-    let float_point = Point { x: 2.5, y: 5.0 };
-    println!("Distance from origin: {}", float_point.distance_from_origin());
+    p10_methods::main();
 }

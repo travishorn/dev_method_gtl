@@ -4,13 +4,16 @@ Some of my code as I follow along with [The Dev
 Method](https://www.youtube.com/@TheDevMethod)'s video titled "[Rust: Generics,
 Traits, Lifetimes](https://www.youtube.com/watch?v=JLfEiJhpTbE)".
 
-- [Print the largest number in a vector](https://github.com/travishorn/dev_method_gtl/blob/ff91103abe76ed569af73b9aee8d38d2281384d8/src/main.rs)
-- [Two vectors. With code duplication](https://github.com/travishorn/dev_method_gtl/blob/5c4d4aa73715d93dc5a5c0f5b78d62014462a903/src/main.rs)
-- [Remove duplication with a function](https://github.com/travishorn/dev_method_gtl/blob/c22552e119ded6a351831d07a6b1c1eb8938ea3e/src/main.rs)
-- [Take vector by reference](https://github.com/travishorn/dev_method_gtl/blob/72f6fbbedc2a5c7b5387c1a11ae6b83381efad06/src/main.rs)
-- [Take any array-like](https://github.com/travishorn/dev_method_gtl/blob/a872748aef9897d42554acaa5065fba62ff54f68/src/main.rs)
-- [Separate functions for separate datatypes](https://github.com/travishorn/dev_method_gtl/blob/0db920831db6557b240c133db27342ba570d5abb/src/main.rs)
-- [Using a generic type](https://github.com/travishorn/dev_method_gtl/blob/371bedc98fc70df08ef24ad87a4ee6c75d036987/src/main.rs)
-- [Restrict generic type to enabled comparison operator](https://github.com/travishorn/dev_method_gtl/blob/148062232f7fecd35a2c3f2899f03deeeb357bbd/src/main.rs)
-- [Custom type with a generic](https://github.com/travishorn/dev_method_gtl/blob/4c268ac7c32393709a1e22885f8214276a680cb2/src/main.rs)
-- [Implementing methods](https://github.com/travishorn/dev_method_gtl/blob/44a1891c2a79271c8a4d3bfe19f214b560b3c7b2/src/main.rs)
+| Topic                              | Code File                                                        |                                  Video Time |
+|:-----------------------------------|:-----------------------------------------------------------------|--------------------------------------------:|
+| Largest number in a vector         | [p00_largest_number.rs](./src/p00_largest_number.rs)             | [01:04](https://youtu.be/JLfEiJhpTbE?t=64)  |
+| Two vectors, with code duplication | [p01_with_duplication.rs](./src/p01_with_duplication.rs)         | [01:30](https://youtu.be/JLfEiJhpTbE?t=90)  |
+| Remove duplication with a function | [p02_remove_duplication.rs](./src/p02_remove_duplication.rs)     | [01:52](https://youtu.be/JLfEiJhpTbE?t=112) |
+| Take vector by reference           | [p03_vector_references.rs](./src/p03_vector_references.rs)       | [01:52](https://youtu.be/JLfEiJhpTbE?t=112) |
+| Take any array-like                | [p04_array_like.rs](./src/p04_array_like.rs)                     | [01:52](https://youtu.be/JLfEiJhpTbE?t=112) |
+| Separate functions for datatypes   | [p05_datatype_functions.rs](./src/p05_datatype_functions.rs)     | [02:41](https://youtu.be/JLfEiJhpTbE?t=161) |
+| Using a generic type               | [p06_generic_type.rs](./src/p06_generic_type.rs)                 | [03:00](https://youtu.be/JLfEiJhpTbE?t=180) |
+| Restrict generic type              | [p07_restrict_generic.rs](./src/p07_restrict_generic.rs)         | [04:00](https://youtu.be/JLfEiJhpTbE?t=240) |
+| Custom type with a generic         | [p08_custome_type_generic.rs](./src/p08_custome_type_generic.rs) | [05:23](https://youtu.be/JLfEiJhpTbE?t=323) |
+| Multiple generic types             | [p09_multiple_generics.rs](./src/p09_multiple_generics.rs)       | [06:19](https://youtu.be/JLfEiJhpTbE?t=379) |
+| Implementing methods               | [p10_methods.rs](./src/p10_methods.rs)                           | [07:26](https://youtu.be/JLfEiJhpTbE?t=446) |
