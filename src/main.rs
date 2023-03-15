@@ -8,8 +8,9 @@
 // mod p07_restrict_generic;
 // mod p08_custom_type_generic;
 // mod p09_multiple_generics;
-mod p10_methods;
+// mod p10_methods;
+mod p12_monomorphization;
 
 fn main() {
-    p10_methods::main();
+    p12_monomorphization::main();
 }
